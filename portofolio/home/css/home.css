@@ -1,0 +1,243 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tussen{
+    background-color: white;
+    height: 50px;
+}
+
+.linkjes{
+    height: inherit;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 125%;
+}
+
+.linkjes > a{
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+header{
+    background-color: white;
+    height: 6vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+}
+
+#navlink:hover {
+    scale: 1.2;
+}
+
+.logo {
+    height: 64px;
+    position: absolute;
+    border-bottom-right-radius: 500px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* voor alle paginas hierboven de code */
+
+
+.wkomtekst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    flex-direction: column;
+    font-size: 4vh;
+    backdrop-filter: blur(8px);
+    width: 50vw;
+    height: 20vh;
+}
+
+.wkombox{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    width: 50vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.277);
+    
+    
+}
+ 
+.background{
+    position:relative;
+    background-image: url(./backgrounds/hoi.jpg);
+    height: 100vh;
+    color: white;
+    z-index: -1;
+    /* zorgt voor parallax effect */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.prjctbackground{
+    background-image: url(./backgrounds/db.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.prjctinhoud{
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 30%;
+    transform:translate(-50%, -50%); 
+    height: 20vh;
+    width: 50vw;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.277);
+}
+
+.prjcttekst{
+    color: white;
+    width: 50vw;
+    height: 20vh;
+}
+
+.abtbackground{
+    background-image: url(./backgrounds/pexels-codioful-\(formerly-gradienta\)-6985001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+}
+
+.abtbox{
+    position: absolute;
+    top: 250%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.277);
+    width: 50vw;
+    height: 20vh;
+}
+
+.abtekst{
+    color: white;
+    text-align: center;
+    width: 50vw;
+    height: 20vh;
+}
+
+.ctbackground{
+    background-image: url(./backgrounds/pxfuel.com.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    height: 100vh;
+}
+
+.ctbox{
+    position: absolute;
+    top: 350%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.100);
+    width: 50vw;
+    height: 20vh;
+    border-radius: 50px;
+}
+
+.cttekst{
+    width: 50vw;
+    height: 20vh;
+    color: white;
+    text-align: center;
+}
+
+.cme{
+    font-size: xx-large;
+}
+
+.ctform{
+    display: flex;
+    position: absolute;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    color: white;
+    top: 315%;
+    left: 60%;
+    background-color: rgba(0, 0, 0, 0.100);
+    height: 75vh;
+    width: 30vw;
+    justify-content:center;
+    flex-direction: column;
+    border-radius: 100px;
+}
+
+.inputm{
+    margin-top: 2vh;
+    background-color: transparent;
+    
+    color: white;
+    
+}
+
+@media only screen and (max-width: 1298px) {
+    .ctform{
+        display: none;
+    }
+}
+
+.contactform > input{
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 2vh;
+    text-align: center;
+}
+
+.inputma{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.contactform > span{
+    font-size: larger;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.formbutton{
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 2vh;
+    text-align: center;
+    background-color: transparent;
+    margin-top:1vh;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+
