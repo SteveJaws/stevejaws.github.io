@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
-    background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tussen{
@@ -16,19 +24,21 @@ body{
 .linkjes{
     height: inherit;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     font-size: 125%;
 }
 
 .linkjes > a{
+    font-family: 'Press Start 2P', cursive;
     text-decoration: none;
-    color: black;
+    color: white;
+    text-shadow: 2px 2px black;
     margin-right: 40px;
 }
 
 header{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.277);
     height: 6vh;
     width: 100vw;
     position: fixed;
@@ -59,8 +69,7 @@ header{
     height: inherit;
     flex-direction: column;
     font-size: 4vh;
-    backdrop-filter: blur(8px);
-    width: 50vw;
+    width: 60vw;
     height: 20vh;
 }
 
@@ -68,19 +77,18 @@ header{
     position: absolute;
     z-index: 2;
     color: white;
+    text-shadow: 5px 5px black;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%) ;
-    width: 50vw;
+    width: 60vw;
     height: 20vh;
-    background-color: rgba(0, 0, 0, 0.277);
-    
-    
+    border-radius: 20px;
 }
  
 .background{
     position:relative;
-    background-image: url(./backgrounds/hoi.jpg);
+    background-image: url(./backgrounds/boven.png);
     height: 100vh;
     color: white;
     z-index: -1;
@@ -88,22 +96,21 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    
     
 }
 
 .prjctbackground{
-    background-image: url(./backgrounds/db.jpg);
+    background-image: url(./backgrounds/MicrosoftTeams-image\ \(9\).png);
     background-size: cover;
     height: 100vh;
     z-index: -1;
     background-attachment: fixed;
 }
-
 .prjctinhoud{
     color: white;
     position: absolute;
-    top: 150%;
+    top: 250%;
     left: 30%;
     transform:translate(-50%, -50%); 
     height: 20vh;
@@ -120,7 +127,7 @@ header{
 }
 
 .abtbackground{
-    background-image: url(./backgrounds/pexels-codioful-\(formerly-gradienta\)-6985001.jpg);
+    background-image: url(./backgrounds/MicrosoftTeams-image\ \(9\).png);
     background-attachment: fixed;
     background-size: cover;
     z-index: -1;
@@ -129,24 +136,54 @@ header{
 
 .abtbox{
     position: absolute;
-    top: 250%;
-    left: 70%;
+    top: 150%;
+    left: 75%;
     transform: translate(-50%,-50%);
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.277);
-    width: 50vw;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px black;
+    background-color: rgba(0, 0, 0, 0.400);
+    width: 45vw;
     height: 20vh;
+    display: flex;
 }
 
-.abtekst{
+.abttekst{
     color: white;
     text-align: center;
     width: 50vw;
     height: 20vh;
 }
 
+.cv{
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 107%;
+    left: 4%;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px black;
+    background-color: rgba(0, 0, 0, 0.400);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.foto{
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 154%;
+    left: 4%;
+    box-shadow: 5px 5px black;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.400);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
 .ctbackground{
-    background-image: url(./backgrounds/pxfuel.com.jpg);
+    background-image: url(./backgrounds/MicrosoftTeams-image\ \(9\).png);
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -158,11 +195,11 @@ header{
     top: 350%;
     left: 30%;
     transform: translate(-50%,-50%);
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.100);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.400);
     width: 50vw;
     height: 20vh;
-    border-radius: 50px;
+    box-shadow: 5px 5px black;
 }
 
 .cttekst{
@@ -183,17 +220,17 @@ header{
 .ctform{
     display: flex;
     position: absolute;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     text-align: center;
     color: white;
     top: 315%;
     left: 60%;
-    background-color: rgba(0, 0, 0, 0.100);
+    background-color: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px black;
     height: 75vh;
     width: 30vw;
     justify-content:center;
     flex-direction: column;
-    border-radius: 100px;
 }
 
 .inputm{
@@ -212,15 +249,16 @@ header{
 
 .contactform > input{
     border: 2px solid white;
-    border-radius: 50px;
+    box-shadow: 5px 5px black;
     height: 2vh;
     text-align: center;
+    width: 8vw;
 }
 
 .inputma{
     background-color: transparent;
     border: 2px solid white;
-    border-radius: 10px;
+    box-shadow: 5px 5px black;
     color: white;
     text-align: center;
 }
@@ -235,14 +273,18 @@ textarea:focus, input:focus{
 
 .formbutton{
     border: 2px solid white;
-    border-radius: 50px;
-    height: 2vh;
+    height: 6vh;
     text-align: center;
     background-color: transparent;
     margin-top:1vh;
+    box-shadow: 5px 5px black;
     color: white;
     cursor: pointer;
     text-align: center;
+}
+
+.formbutton:hover{
+    scale: 1.05;
 }
 
 

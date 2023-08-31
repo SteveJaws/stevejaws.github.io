@@ -12,11 +12,10 @@
 <body>
     <div id="top"></div>
     <header>
-        <img src="./media/MicrosoftTeams-image.png" alt="plaatje" class="logo">
         <div class="linkjes">
             <a id="navlink" href="#top"><p class="navhome">Home</p></a>
-            <a id="navlink" href="#project">Project</a>
-            <a id="navlink" href="#about">About/CV</a>
+            <a id="navlink" href="#project">About/CV</a>
+            <a id="navlink" href="#about">Project</a>
             <a id="navlink" href="#contact">Contact</a>
         </div>
     </header>
@@ -24,9 +23,7 @@
         <div class="wkombox">
 
             <div class="wkomtekst">
-                <p>Meet Aron</p>
-            
-                <p>An frontend developer</p>
+                <h1>Aron van Duijn</h1>
             </div>
         </div>
 
@@ -42,15 +39,25 @@
                 hoi
             </div>
             
+            
         </div>
+        <div class="cv">
+                <h1>CV</h1>
+        </div>
+        <div class="foto">
 
+        </div>
         
     </div>
 
     <div id="about" class="abtdiv">
         <div class="abtbox">
             <div class="abttekst">
-
+                <h1>This is Aron</h1>
+                <p>Hey my name is Aron I'm 17 years old and I'm studying software developement at Grafisch Lyceum Rotterdam. <br>
+                   Here I specialize in front-end development.
+                </p> 
+                
             </div>
         </div>
 
@@ -62,22 +69,22 @@
         <div class="ctbox">
             <div class="cttekst">
                 <h1>Contact me</h1>
-                <p><p>
+                <p>If you have a question for me or or want to contact me for an internship<p>
             </div>
         </div>
         <div class="ctform">
-            <p class="cme">Contactform</p>
-            <form class="contactform" <form action="https://formspree.io/f/xknlbnwk" method="POST" >
-                <span id="spanform" class="inputm">Name</span> <br>
-                <input class="inputm" name="name" id="name" type="text" placeholder="required" required> <br> <br>
-                <span id="spanform"  class="inputm">E-mail</span> <br>
-                <input class="inputm" name="email" id="email" type="text" placeholder="required" required> <br> <br>
+            <h1 class="h1cform">Contactform</h1>
+            <form class="contactform" action="https://formspree.io/f/xknlbnwk" method="POST" >
+                <span id="spanform" class="inputm">Name *</span> <br>
+                <input class="inputm" name="name" id="name" type="text" placeholder="Full name" required> <br> <br>
+                <span id="spanform"  class="inputm">E-mail *</span> <br>
+                <input class="inputm" name="email" id="email" type="text" placeholder="Your e-mail" required> <br> <br>
                 <span id="spanform"  class="inputm">Phone number</span> <br>
-                <input class="inputm" name="phone" id="phone" type="text" placeholder="optional"> <br> <br>
+                <input class="inputm" name="phone" id="phone" type="text" placeholder="+31 06-66526893"> <br> <br>
                 <span id="spanform"  class="inputm">Business name</span> <br>
-                <input class="inputm" name="business" id="business" type="text" placeholder="optional"> <br> <br>
-                <span id="spanform"  class="inputm">Message</span> <br>
-                <textarea  class="inputma" name="message" id="message" cols="30" rows="5" required placeholder="required"></textarea> <br>
+                <input class="inputm" name="business" id="business" type="text" placeholder="Business name"> <br> <br>
+                <span id="spanform"  class="inputm">Message *</span> <br>
+                <textarea  class="inputma" name="message" id="message" cols="30" rows="5" required placeholder="Message"></textarea> <br>
                 <input class="formbutton" type="submit" value="Send">
             </form>
         </div>
