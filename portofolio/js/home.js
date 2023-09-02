@@ -3,19 +3,16 @@ function page1(){
         behavior: 'smooth'
     });
     document.getElementById("middenwoord").style.display = "block"
-    document.getElementById("middenwoord2").style.display = "block"
+    document.getElementById("pword").style.display = "block"
     setTimeout(function () {
         location.reload(); // Reloads the current page
-    }, 1000); // 2000 milliseconds (2 seconds)
-    document.getElementById("disappear").style.display = "none";
+    }, 1000);
 }
 
 function page2(){
     document.querySelector('#page2').scrollIntoView({
         behavior: 'smooth'
     });
-    document.getElementById("middenwoord").style.display = "none"
-    document.getElementById("middenwoord2").style.display = "none"
     document.getElementById("disappear").style.display = "none";
 }
 
