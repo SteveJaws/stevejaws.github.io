@@ -1,0 +1,200 @@
+/* typewriter font */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Special+Elite&display=swap');
+
+button{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    width: 3rem;
+    height: 3rem;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 7px solid rgba(46, 110, 248, 0.5);
+    transition: all .2s ease-in-out;
+}
+
+.arrowleft{
+    rotate: 270deg;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+.hword{
+    font-size: 600%;
+    font-family: 'Special Elite', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 2, 20);
+    font-family: 'Poppins', sans-serif;
+}
+
+.k1_2{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.slidein1{
+    animation: k1_2 1.0s ease-in-out;
+}
+
+@keyframes k1_2 {
+    from{
+        transform: translateY(-1900%);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+.k1_3{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.slidein2{
+    animation: k1_3 1.0s ease-in-out;
+}
+
+@keyframes k1_3 {
+    from{
+        transform: translateX(-3000%);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+
+.k2_1{
+    position: absolute;
+    top: 50%;
+    rotate: 180deg;
+}
+
+.k2_4{
+    position: absolute;
+    left: 150%;
+    bottom: 0;
+    rotate: 270deg;
+}
+
+.k3_1{
+    position: absolute;
+    left: 50%;
+    top: 104%;
+    rotate: 90deg;
+}
+
+.k3_4{
+    position: absolute;
+    top: 150%;
+    right: 0;
+}
+
+.k4_3{
+    position: absolute;
+    top: 150%;
+}
+
+.k4_2{
+    position: absolute;
+    left: 150%;
+    top: 104%;
+    rotate: 90deg;
+}
+
+.container12{
+    width: 200%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.page12{
+    color: white;
+    width: 100vw;
+}
+
+.container34{
+    width: 200%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.page34{
+    color: white;
+    width: 100vw;
+}
+
+.middenwoord{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: fit-content;   
+}
+
+.middenwoord2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    font-size: xx-large;
+    font-family: 'Special Elite', cursive;
+}
+
+/* typewriter effect */
+
+.hword, .middenwoord2, .contacttxt {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+/* typewriter effect */
+
+.contacttxt{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transition: all 0.5s ease-in;
+    cursor: default;
+}
+
+.contacttxt:hover{
+    scale: 1.1;
+}
