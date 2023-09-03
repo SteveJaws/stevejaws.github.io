@@ -16,7 +16,7 @@ function page1(){
     document.getElementById("pword").style.display = "block"
     setTimeout(function () {
         location.reload(); // Reloads the current page
-    }, 500);
+    }, 1500);
     Menu.style.display = "none";
     menutrigger.style.display = "none";
     scaleall.style.transform = "scale(1)";
