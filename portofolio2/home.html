@@ -7,46 +7,85 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-    <div class="container12">
-        <div class="page12" id="page1">
-            <div id="disappear">
-                <div id="middenwoord" class="middenwoord">
-                    <p class="hword">Aron van Duijn</p>
+    <div class="grain"></div>
+    <div class="topleft" id="page1">s</div>
+    <div class="topright" id="page2">s</div>
+    <div class="bottomleft" id="page3">s</div>
+    <div class="bottomright" id="page4">s</div>
+    <div class="menu slidein4" id="menu">
+        <div class="menutxt">WHERE DO YOU WANNA GO</div> <br> <br> <br>
+        <button class="menuhome" onmouseenter="homeon()" onmouseleave="homeoff()" onclick="page1()"><h1>HOME</h1></button> <br>
+        <button class="menuprojects" onmouseenter="projectson()" onmouseleave="projectsoff()" onclick="page3()"><h1>PROJECTS</h1></button> <br>
+        <button class="menuabout" onmouseenter="abouton()" onmouseleave="aboutoff()" onclick="page2()"><h1>ABOUT</h1></button> <br>
+        <button class="menucontact" onmouseenter="contacton()" onmouseleave="contactoff()" onclick="page4()"><h1>CONTACT</h1></button> <br>
+    </div>
+    <div class="imghome kom" id="imghome"></div>
+    <div class="imgprojects kom" id="imgprojects"></div>
+    <div class="imgabout kom" id="imgabout"></div>
+    <div class="imgcontact kom" id="imgcontact"></div>
+    <img class="menutrigger id="menutrigger" onclick="menu()" src="./logo/A.png" alt="">
+    <div class="grain"></div>
+    <div id="scaleall">
+        <div class="container12" id="container12">
+            <div class="page12" >
+                <div id="disappear">
+                    <div id="middenwoord" class="middenwoord">
+                        <p class="hword slidein3">Aron van Duijn</p>
+                    </div>
+                    <div class="middenwoord2">
+                        <p id="pword" class="pword slidein3" >A front-end developer</p>
+                    </div>
+                    <div class="knoppenhome">
+                        <button onclick="page2()"  class="button1" id="button"><p class="slidein1">→ About</p></button>
+                        <button onclick="page3()"  class="button2" id="button"><p class="slidein1">→ Projects</p></button>
+                        <button onclick="page4()"  class="button3" id="button"><p class="slidein1">→ Contact</p></button>
+                    </div>
                 </div>
-                <div class="middenwoord2">
-                    <p id="pword" class="pword slidein3" >A front-end developer</p>
-                </div>
-                <button onclick="page2()" class="k1_2 slidein1">></button>
-                <button onclick="page3()" class="k1_3 slidein2"><p class="arrowleft"><</p></button>
+            </div>
+            <div class="page12" id="page2">
+                <h1>About</h1>
+                
             </div>
         </div>
-        <div class="page12" id="page2">
-            <h1>hoi</h1>
-            <button onclick="page1()" class="k2_1">></button>
-            <button onclick="page4()" class="k2_4"><</button>
+        <div class="container34" id="container34">
+            <div class="page34">
+                <h1>Projects</h1>
+                
+            </div>
+            <div class="page34" id="page4">
+                <div class="contacttxt">
+                    <h1>Contact page</h1>
+                    <p class="groot">  
+                        If you want to contact me, you can fill in the form. <br>
+                        also here's my info if you want to do it manually. <br> <br>
+                        My email is: vanduijnaronzakelijk@gmail.com
+                    </p>
+                    <p class="klein">
+                        If you want to contact me, <br> you can fill in the form. <br>
+                        also here's my info <br>if you want to do it manually. <br>
+                        My email is: vanduijnaronzakelijk@gmail.com
+                    </p>
+                </div>
+                <form action="">
+                    <h1>Contact form</h1>
+                    <span>Naam *</span>
+                    <input type="text" name="name">
+                    <span>E-mail *</span>
+                    <input type="type" name="email">
+                    <span>Phone number</span>
+                    <input type="text" name="phone">
+                    <span>Business name</span>
+                    <input type="text" name="business">
+                    <span>Message *</span>
+                    <textarea name="message" id="" cols="30" rows="1"></textarea>
+                    <input class="submit" type="submit" value="Send">
+                </form>
+            </div>
         </div>
     </div>
-    <div class="container34">
-        <div class="page34" id="page3">
-            <h1>hoija</h1>
-            <button onclick="page1()" class="k3_1"><</button>
-            <button onclick="page4()" class="k3_4">></button>
-        </div>
-        <div class="page34" id="page4">
-            <div class="contacttxt">
-                <h1>Contact page</h1>
-                <p> 
-                    If you want to contact me, you can fill in the form. <br>
-                    also here's my info if you want to do it manually.
-                </p>
-            </div>
-            <div class="form">
 
-            </div>
-            <button onclick="page3()" class="k4_3"><</button>
-            <button onclick="page2()" class="k4_2"><</button>
-        </div>
-    </div>
+    
+
 </body>
 <script src="./js/home.js"></script>
 </html>
