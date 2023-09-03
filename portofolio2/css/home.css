@@ -122,19 +122,6 @@ body{
     color: transparent;
 }
 
-.menutriggerklein{
-    position: fixed;
-    top: 2%;
-    left: 2%;
-    transition: all 0.2s ease-in-out;
-}
-
-.menutriggerklein:hover{
-    transform: scale(1.3);
-    cursor: pointer;
-    transform: rotate(180deg);
-}
-
 .menutrigger{
     position: fixed;
     z-index: 100;
@@ -508,6 +495,10 @@ form > span{
 
     form > input{
         width: 100%;
+    }
+
+    .menutrigger{
+        width:3.5%;
     }
 
     
