@@ -22,12 +22,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.topleft{
-    position: absolute;
-    top: 0;
-    color: transparent;
-}
-
 .imghome{
     position: fixed;
     width: 57%;
@@ -99,6 +93,12 @@ body{
     border-bottom-right-radius: 100px;
     background-color: brown;
     
+}
+
+.topleft{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .topright{
