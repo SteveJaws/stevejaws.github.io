@@ -470,6 +470,11 @@ form > span{
         left: 75%;
     }
 
+    .menutrigger{
+        left: 37%;
+        width: 4%;
+    }
+
     .groot{
         display: none;
     }
@@ -496,10 +501,4 @@ form > span{
     form > input{
         width: 100%;
     }
-
-    .menutrigger{
-        width:20%;
-    }
-
-    
 }
