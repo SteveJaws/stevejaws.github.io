@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Aron van Duijn</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 </head>
 <body>
     <div class="grain"></div>
@@ -13,7 +14,6 @@
     <div class="bottomleft" id="page3">s</div>
     <div class="bottomright" id="page4">s</div>
     <div class="menu slidein4" id="menu">
-        <div class="menutxt">WHERE DO YOU WANNA GO</div> <br> <br> <br>
         <button class="menuhome" onmouseenter="homeon()" onmouseleave="homeoff()" onclick="page1()"><h1>HOME</h1></button> <br>
         <button class="menuprojects" onmouseenter="projectson()" onmouseleave="projectsoff()" onclick="page3()"><h1>PROJECTS</h1></button> <br>
         <button class="menuabout" onmouseenter="abouton()" onmouseleave="aboutoff()" onclick="page2()"><h1>ABOUT</h1></button> <br>
@@ -69,15 +69,15 @@
                 <form action="">
                     <h1>Contact form</h1>
                     <span>Naam *</span>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                     <span>E-mail *</span>
-                    <input type="type" name="email">
+                    <input type="type" name="email" required>
                     <span>Phone number</span>
                     <input type="text" name="phone">
                     <span>Business name</span>
                     <input type="text" name="business">
                     <span>Message *</span>
-                    <textarea name="message" id="" cols="30" rows="1"></textarea>
+                    <textarea name="message" id="" cols="30" rows="1" required></textarea>
                     <input class="submit" type="submit" value="Send">
                 </form>
             </div>

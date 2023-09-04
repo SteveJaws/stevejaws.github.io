@@ -99,9 +99,6 @@ function menu(){
     scaleall.style.transform = "scale(0.9)"
     scaleall.style.transition = 'transform 0.5s ease-in-out';
     
-    
-    
-    
     document.body.style.backgroundColor = "rgb(181, 172, 182)"
 }
 
