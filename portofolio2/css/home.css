@@ -447,7 +447,7 @@ form > span{
 /* optimization for phone */
 
 
-@media only screen and (max-width: 500px) and (max-height: 1000px) {
+@media only screen and (max-width: 600px) {
 
     .hword{
         font-size: 180%;
