@@ -3,12 +3,16 @@
 /* poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Special+Elite&display=swap');
 
+audio{
+    background-color: transparent;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-behavior: smooth;
     transition-duration: 3s;
-    overflow-x: hidden;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 *:focus{
@@ -73,8 +77,10 @@ body{
     width: 57%;
     height: 80vh;
     display: none;
-    background-image: url(./photos/home.png);
+    background-image: url(./photos/contact.png);
     background-position: center;
+    background-size: contain;
+    background-size: cover;
 }
 
 .imgprojects{
@@ -92,8 +98,9 @@ body{
     height: 80vh;
     display: none;
     border-bottom-right-radius: 100px;
-    background-color: brown;
-    
+    background-image: url(./photos/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .topleft{
@@ -158,8 +165,8 @@ body{
     cursor: pointer;
     background-color: transparent;
     border: none;
-    transition: all 0.5s ease-in-out;
     font-family: 'Pacifico', cursive;
+    transition: all 1s ease-in-out;
 }
 
 .menu > button:hover{
@@ -234,6 +241,7 @@ body{
 
 .slidein1:hover{
     transform: scale(1.3);
+    color: grey;
 }
 
 .slidein1{
@@ -276,6 +284,8 @@ body{
     width: 100vw;
 }
 
+
+
 .container34{
     width: 200%;
     height: 100vh;
@@ -294,6 +304,11 @@ body{
     transform: translate(-50%,-50%);
     min-width: fit-content;   
     font-family: 'Pacifico', cursive;
+}
+
+.sendbutton{
+    position: relative;
+    right: -40%;
 }
 
 .middenwoord2{
@@ -324,22 +339,120 @@ body{
     display: none;
 }
 
+.photo-about{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 10%;
+    position: relative;
+    left: 90.5%;
+    top: -100%;
+    background-image: url(./photos/ikedited.png);
+    background-size: contain;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 10vw;
+    transition: all 1s ease-in-out;
+    filter: saturate(0);
+}
+
+.photo-about:hover{
+    width: 40vw;
+    left: 60.5%;
+}
+
+.appear{
+    animation: photo-about 2s ease-in-out forwards;
+}
+
+@keyframes photo-about{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.text-about{
+    color: black;
+    font-size: large;
+    position: relative;
+    left: 20%;
+    top: -80%;
+    display: none;
+}
+
+.appear3{
+    animation: text-about 2s ease-in-out forwards;
+}
+
+@keyframes text-about{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.page2-items{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.line{
+    position: relative;
+    top: 5%;
+    left: 3%;
+    height: 100vh;
+    width: 6%;
+    height: 90%;
+    border-right: 4px solid black;
+    display: none;
+}
+
+.appear2{
+    animation: line 2s ease-in-out forwards;
+}
+
+@keyframes line{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+
+}
+
+.linetxt{
+    display: flex;
+    justify-content: end;
+    align-items: right;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    letter-spacing: -20px;
+    color: black;
+    position: relative;
+    top: 20%;
+    font-family: 'Pacifico', cursive;
+}
+
+.linetxttitle{
+    
+    color: black;
+    font-size: 300%;
+}
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 17%;
+    width: 50%;
     height: 40%;
     position: relative;
-    right: -65%;
-    top: 15%;
-    transition: all 0.5s ease-in;
-    transform-origin: left;
-}
-
-form:hover{
-    scale: 1.1;
+    right: -20%;
 }
 
 form > input{
@@ -376,9 +489,8 @@ form > span{
 
 .contacttxt{
     position: relative;
-    top: 40%;
-    left: 25%;
-    right: 75%;
+    top: 40vh;
+    right: 60%;
     transition: all 0.5s ease-in;
     cursor: default;
     width: fit-content;
@@ -465,6 +577,7 @@ form > span{
     .button2{
         font-size: x-small;
         left: 25%;
+        text-decoration: none;
     }
 
     .button3{
@@ -496,7 +609,7 @@ form > span{
     }
 
     form{
-        right: -25%;
+        right: 50%;
         width: 60%;
     }
 

@@ -23,11 +23,11 @@
     <div class="imgprojects kom" id="imgprojects"></div>
     <div class="imgabout kom" id="imgabout"></div>
     <div class="imgcontact kom" id="imgcontact"></div>
-    <img class="menutrigger id="menutrigger" onclick="menu()" src="./logo/A.png" alt="logo">
+    <img class="menutrigger" id="menutrigger" onclick="menu()" src="./logo/A.png" alt="logo">
     <div class="grain"></div>
     <div id="scaleall">
         <div class="container12" id="container12">
-            <div class="page12" >
+            <div class="page12" id="page1">
                 <div id="disappear">
                     <div id="middenwoord" class="middenwoord">
                         <p class="hword slidein3">Aron van Duijn</p>
@@ -37,53 +37,70 @@
                     </div>
                     <div class="knoppenhome">
                         <button onclick="page2()"  class="button1" id="button"><p class="slidein1">→ About</p></button>
-                        <button onclick="page3()"  class="button2" id="button"><p class="slidein1">→ Projects</p></button>
+                        <a href="./pages/tussenpage.html" class="button2" id="button"><p class="slidein1">→ bonus</p></a>   
                         <button onclick="page4()"  class="button3" id="button"><p class="slidein1">→ Contact</p></button>
                     </div>
                 </div>
             </div>
             <div class="page12" id="page2">
-                <h1>About</h1>
+                <div class="page2-items" id="page2-items">
+                    
+                    <div class="line appear2" id="line"><p class="linetxt"><span class="linetxttitle">ABOUT </span></div>
+                    <div class="text-about appear3" id="text-about">
+                        <h3>This is me</h3>
+                        hi, I'm Aron van Duijn and I'm a front-end developer in training. <br>I really enjoy experimenting with designs. <br>I am also curious to learn new things. <br>I also love music very much, I can appreciate all genres. <br> And of course I also love playing video games.
+                        <br> <br>
+                        <h3>Mijn CV</h3>
+                        <a href="./media/cv.pdf">download mijn cv</a> 
+                        <br>
+                        <br>
+                        <h3>hier is de opening van mijn favoriete anime</h3>
+                        <audio src="./media/y2mate.is -  Inazuma Eleven GO Opening 1. Ten Made Todoke T Pistonz KMC Full -aRPEECLjABs-48k-1694180301.mp3" controls></audio>
+                    </div>
+                    <div class="photo-about appear"></div>
+                </div>
                 
             </div>
         </div>
         <div class="container34" id="container34">
-            <div class="page34">
-                <h1>Projects</h1>
-                
+            <div class="page34" id="page3">
+                <div id="disappear3">
+                    <h1>Projects</h1>
+                </div>
             </div>
             <div class="page34" id="page4">
-                <div class="contacttxt">
-                    <h1>Contact page</h1>
-                    <p class="groot">  
-                        If you want to contact me, you can fill in the form. <br>
-                        also here's my info if you want to do it manually. <br> <br>
-                        My email is: vanduijnaronzakelijk@gmail.com
-                    </p>
-                    <p class="klein">
-                        If you want to contact me, <br> you can fill in the form. <br>
-                        also here's my info <br>if you want to do it manually. <br>
-                        My email is: vanduijnaronzakelijk@gmail.com
-                    </p>
+                <div id="disappear4">
+                    <div class="contacttxt">
+                        <h1>Contact page</h1>
+                        <p class="groot">  
+                            If you want to contact me, you can fill in the form. <br>
+                            also here's my info if you want to do it manually. <br> <br>
+                            My email is: vanduijnaronzakelijk@gmail.com
+                        </p>
+                        <p class="klein">
+                            If you want to contact me, <br> you can fill in the form. <br>
+                            also here's my info <br>if you want to do it manually. <br>
+                            My email is: vanduijnaronzakelijk@gmail.com
+                        </p>
+                    </div>
+                    <form>
+                        <h1>Contact form</h1>
+                        <span>Naam *</span>
+                        <input type="text" name="name" id="name" required>
+                        <span>E-mail *</span>
+                        <input type="type" name="email" id="email" required>
+                        <span>Phone number</span>
+                        <input type="text" name="phone">
+                        <span>Message *</span>
+                        <textarea name="message" id="message" cols="30" rows="1" required></textarea>
+                        
+                    </form>
+                    <button id="sendButton" class="sendbutton" onclick="sendEmail()">verzend email</button>
                 </div>
-                <form action="">
-                    <h1>Contact form</h1>
-                    <span>Naam *</span>
-                    <input type="text" name="name" required>
-                    <span>E-mail *</span>
-                    <input type="type" name="email" required>
-                    <span>Phone number</span>
-                    <input type="text" name="phone">
-                    <span>Business name</span>
-                    <input type="text" name="business">
-                    <span>Message *</span>
-                    <textarea name="message" id="" cols="30" rows="1" required></textarea>
-                    <input class="submit" type="submit" value="Send">
-                </form>
             </div>
         </div>
     </div>
-
+    <img src="./media/.png" alt="">
     
 
 </body>

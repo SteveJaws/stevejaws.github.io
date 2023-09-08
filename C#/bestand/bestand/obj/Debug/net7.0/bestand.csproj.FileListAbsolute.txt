@@ -1,0 +1,15 @@
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/bin/Debug/net7.0/bestand
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/bin/Debug/net7.0/bestand.deps.json
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/bin/Debug/net7.0/bestand.runtimeconfig.json
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/bin/Debug/net7.0/bestand.dll
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/bin/Debug/net7.0/bestand.pdb
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.csproj.AssemblyReference.cache
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.AssemblyInfoInputs.cache
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.AssemblyInfo.cs
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.csproj.CoreCompileInputs.cache
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.dll
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/refint/bestand.dll
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.pdb
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/bestand.genruntimeconfig.cache
+/Volumes/T7 Touch/2de_klas/C#/bestand/bestand/obj/Debug/net7.0/ref/bestand.dll
